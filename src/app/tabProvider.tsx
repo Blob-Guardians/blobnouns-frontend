@@ -8,14 +8,14 @@ export enum TabState {
 
 // create a context to store the tab state
 export const TabContext = createContext({
-  tabState: TabState.BROWSE,
+  tabState: TabState.SEND,
   setTabState: (tabState: TabState) => {},
 });
 
 // define the tab provider
 
 export const TabProvider = ({ children }: { children: React.ReactNode }) => {
-  const [tabState, setTabState] = useState(TabState.BROWSE);
+  const [tabState, setTabState] = useState(TabState.SEND);
 
   return (
     <TabContext.Provider value={{ tabState, setTabState }}>

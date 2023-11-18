@@ -11,16 +11,13 @@ export default function HomePage() {
       flexDirection="column"
       flex={1}
       minHeight="100vh"
-      py={4}
       bg="#FEE3F3"
       justify="center"
     >
-      <Container maxW="container.xl" py={4}>
-        <div>
-          <Learn />
-          <Send />
-          <Browse />
-        </div>
+      <Container>
+        <Learn />
+        <Send />
+        <Browse />
       </Container>
     </Flex>
   );
