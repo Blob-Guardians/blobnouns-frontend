@@ -13,12 +13,13 @@ const CustomButton = ({
     size="sm"
     variant="outline"
     // colorScheme="black"
-    fontWeight={500}
+    borderRadius={480}
+    fontWeight={900}
     textTransform="uppercase"
     letterSpacing="1px"
     fontFamily="var(--font-miriam)"
     textShadow="0px 0px 4px rgba(255, 255, 255, 0.33)"
-    fontSize="15px"
+    fontSize="18px"
     backgroundColor="nouns.yellow"
     color="nouns.pink"
     onClick={onClick}
@@ -33,8 +34,6 @@ export const ConnectWallet: FC = () => {
         {({
           account,
           chain,
-          openAccountModal,
-          openChainModal,
           openConnectModal,
           authenticationStatus,
           mounted,

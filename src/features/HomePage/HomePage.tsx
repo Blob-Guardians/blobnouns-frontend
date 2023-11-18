@@ -1,12 +1,27 @@
 "use client";
 
-import Image from "next/image";
-import styles from "./homePage.module.css";
+import { Learn } from "../Learn/learn";
+import { Send } from "../Send/send";
+import { Browse } from "../Browse/browse";
+import { Flex, Container } from "@chakra-ui/react";
 
 export default function HomePage() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}></div>
-    </main>
+    <Flex
+      flexDirection="column"
+      flex={1}
+      minHeight="100vh"
+      py={4}
+      bg="#FEE3F3"
+      justify="center"
+    >
+      <Container maxW="container.xl" py={4}>
+        <div>
+          <Learn />
+          <Send />
+          <Browse />
+        </div>
+      </Container>
+    </Flex>
   );
 }

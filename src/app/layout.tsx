@@ -24,8 +24,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <Header></Header>
-          <Flex flex="1">{children}</Flex>
+          <Flex
+            flexDirection="column"
+            backgroundColor="gray.900"
+            minHeight="100vh"
+          >
+            <Header></Header>
+            <Flex flex="1">{children}</Flex>
+          </Flex>
         </Providers>
       </body>
     </html>

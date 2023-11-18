@@ -11,7 +11,7 @@ import { publicProvider } from "wagmi/providers/public";
 import { ReactNode } from "react";
 import _ from "lodash";
 
-const cannonLocalHost = {
+const blobLocalHost = {
   ...localhost,
   id: 7011893061,
   name: "dencun-devnet-11",
@@ -26,12 +26,12 @@ const cannonLocalHost = {
   },
 };
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [cannonLocalHost],
+  [blobLocalHost],
   [publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "Cannon",
+  appName: "Blobtoss",
   projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID || "",
   chains,
 });

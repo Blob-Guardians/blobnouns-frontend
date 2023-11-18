@@ -1,8 +1,8 @@
-import HomePage from "@/features/HomePage/HomePage";
+import HomePage from "@/features/HomePage/homePage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cannon",
+  title: "Blobtoss",
 };
 
 export default function Home() {
