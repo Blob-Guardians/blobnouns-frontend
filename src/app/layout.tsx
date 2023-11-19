@@ -28,7 +28,10 @@ export default function RootLayout({
             flexDirection="column"
             backgroundColor="gray.900"
             minHeight="100vh"
+            bg="#FEE3F3"
+            color={"black"}
           >
+         
             <Header></Header>
             <Flex flex="1">{children}</Flex>
           </Flex>
