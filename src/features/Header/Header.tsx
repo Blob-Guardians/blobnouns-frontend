@@ -2,7 +2,7 @@
 import React from "react";
 import { Flex, Text, Box, useBreakpointValue } from "@chakra-ui/react";
 import { ConnectWallet } from "./ConnectWallet";
-import { HeaderNavBar } from "@/components/headerNavBar";
+import { HeaderNavBar } from "@/components/Header/headerNavBar";
 
 export const Header = () => {
   return (
