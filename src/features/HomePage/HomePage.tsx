@@ -2,7 +2,7 @@
 
 import { Learn } from "../Learn/learn";
 import { Send } from "../Send/send";
-import { Browse } from "../Browse/browse";
+import { Browse } from "../../app/browse/page";
 import { Flex, Container, Card } from "@chakra-ui/react";
 import { CreateNounButton } from "@/components/CreateNounButton";
 import { BlobTransactionCard } from "@/components/BlobTransactionCard";
@@ -19,7 +19,14 @@ export default function HomePage() {
       <Container>
         <CreateNounButton />
         <Flex>
-          <BlobTransactionCard blobData="" blobGas="" from="0x12312321" hash="0x213123" timestamp="12312321" to="123213213" />
+          <BlobTransactionCard
+            blobData=""
+            blobGas=""
+            from="0x12312321"
+            hash="0x213123"
+            timestamp="12312321"
+            to="123213213"
+          />
         </Flex>
         <Browse />
       </Container>
